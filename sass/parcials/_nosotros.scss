@@ -1,0 +1,36 @@
+/* Estilo solo para nosotros */
+
+@media screen and (min-width: 768px) {
+
+    .nosotros_main{
+        background-color: dimgray;
+    
+        li{
+            display: inline-block;
+            margin-top: 2vw;
+            margin-inline-start: 2vw;
+        }
+        h2{
+            font-size: 2vw ;
+            color: antiquewhite;
+            margin-top: 2vw;
+        }
+        div{
+            border-top: 1px solid antiquewhite;
+            margin: 2vw;
+            padding-top: 2vw;
+        }   
+        h3{
+            text-align: center;
+            color: antiquewhite;
+            font-size: 1.8vw;
+        } 
+        p{
+            text-align: justify;
+            color: antiquewhite;
+            font-size: large;
+            margin: 3vw;
+        }
+    } 
+
+}

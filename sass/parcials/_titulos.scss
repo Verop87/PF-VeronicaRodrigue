@@ -1,0 +1,26 @@
+
+/* Estilo para titulos servicios / presupuesto /contacto / nosotros*/
+
+@media screen and (min-width: 768px) {
+    .servicios_main{
+        background-color: cornflowerblue;
+                ul{
+                    background-color: dimgray;
+                }
+                li{
+                    display: inline-block;
+                    margin-top: 2vw;
+                    margin-inline-start: 2vw;
+                }
+                h2{
+                    font-size: 2vw ;
+                    color: antiquewhite;
+                    margin-top: 2vw;
+                }
+                div{
+                    border-top: 1px solid antiquewhite;
+                    margin: 2vw 2vw 0vw 2vw;
+                    padding-top: 2vw;
+                }
+            }
+}

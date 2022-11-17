@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* Estilo comun a todas las paginas */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #6495ed;
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilo comun a todas las barras de navegación Desktop*/
+  h1 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    animation-name: focus-in-contract-bck;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+  }
+  .focus-in-contract-bck {
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+      transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+      transform: translateZ(12px);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  nav div {
+    background-color: grey;
+    padding: 5px;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 100%;
+    height: 2.5vw;
+    align-content: center;
+    justify-content: space-around;
+  }
+  nav a {
+    font-family: inherit;
+    font-style: normal;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  nav li {
+    list-style: none;
+  }
+  nav li:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
+  nav a:hover {
+    color: rgb(0, 1, 3);
+  }
+  nav input {
+    border-radius: 10px;
+    padding-right: 1vw;
+    align-items: center;
+  }
+}
+/* Estilo para todos los footer */
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  footer div {
+    background-color: whitesmoke;
+    border: black solid 0.5px;
+    height: 1.5vw;
+    width: 100%;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+  }
+  footer ul li {
+    list-style: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+  }
+  footer ul li:hover {
+    transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
+}
+a instagram {
+  background-color: pink;
+}
+
+a facebook {
+  background-color: blue;
+}
+
+a linkedin {
+  background-color: yellow;
+}
+
+/* Estilo solo para el index */
+@media screen and (min-width: 768px) {
+  .index_main {
+    display: grid;
+    grid-template-areas: "h2 h2 h2 h2 h2" "li li li li";
+    row-gap: 3vw;
+  }
+  .index_main h2 {
+    padding-top: 1vw;
+    text-decoration: underline;
+    font-size: 2.5vw;
+  }
+  .index_main ul {
+    display: grid;
+    list-style-type: none;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    row-gap: 3vw;
+  }
+  .index_main ul li {
+    border-radius: 10px;
+    align-items: center;
+    background: rgb(246, 248, 250);
+    background: radial-gradient(circle, rgb(246, 248, 250) 9%, rgb(193, 224, 249) 100%);
+    font-size: 1.5vw;
+    width: 20vw;
+    height: 10vw;
+    padding-block: 1vw;
+    justify-self: stretch;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2vw;
+  }
+  .index_main ul li:hover {
+    transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
+  .index_main li {
+    font-size: 1vw;
+  }
+  h3 {
+    margin-left: 3vw;
+  }
+  .carousel-item img {
+    padding: 0.1vw;
+  }
+  .carousel-item img:hover {
+    transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
+}
+/* Estilo solo para nosotros */
+@media screen and (min-width: 768px) {
+  .nosotros_main {
+    background-color: dimgray;
+  }
+  .nosotros_main li {
+    display: inline-block;
+    margin-top: 2vw;
+    margin-inline-start: 2vw;
+  }
+  .nosotros_main h2 {
+    font-size: 2vw;
+    color: antiquewhite;
+    margin-top: 2vw;
+  }
+  .nosotros_main div {
+    border-top: 1px solid antiquewhite;
+    margin: 2vw;
+    padding-top: 2vw;
+  }
+  .nosotros_main h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 1.8vw;
+  }
+  .nosotros_main p {
+    text-align: justify;
+    color: antiquewhite;
+    font-size: large;
+    margin: 3vw;
+  }
+}
+/* Estilo para titulos servicios / presupuesto /contacto / nosotros*/
+@media screen and (min-width: 768px) {
+  .servicios_main {
+    background-color: cornflowerblue;
+  }
+  .servicios_main ul {
+    background-color: dimgray;
+  }
+  .servicios_main li {
+    display: inline-block;
+    margin-top: 2vw;
+    margin-inline-start: 2vw;
+  }
+  .servicios_main h2 {
+    font-size: 2vw;
+    color: antiquewhite;
+    margin-top: 2vw;
+  }
+  .servicios_main div {
+    border-top: 1px solid antiquewhite;
+    margin: 2vw 2vw 0vw 2vw;
+    padding-top: 2vw;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
