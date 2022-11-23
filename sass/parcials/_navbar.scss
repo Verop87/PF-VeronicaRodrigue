@@ -1,5 +1,6 @@
 
 $body: (#6495ed);
+@use "./variables";
 
 /* Estilo comun a todas las paginas */
 *{
@@ -9,7 +10,7 @@ $body: (#6495ed);
 
 body {
     background-color:$body;
-    
+    font-family: variables.$font;
 }
 
 @media screen and (min-width: 768px) {
@@ -29,7 +30,6 @@ h1{
     animation-name: focus-in-contract-bck;
     animation-duration: 2s;
     animation-iteration-count: initial;
-   
     }
         
     .focus-in-contract-bck {
@@ -70,11 +70,12 @@ nav {
         height: 2.5vw;
         align-content: center;
         justify-content: space-around;
+        padding-top: 10px;
     }
 }
 nav {
     a{
-        font-family: inherit;
+        font-family: variables.$font;
         font-style: normal;
         text-decoration: none;
         color: aliceblue;
@@ -99,10 +100,27 @@ nav {
 nav {
     input{
         border-radius: 10px;
-        padding-right: 1vw;
+        justify-content: space-around;
         align-items: center;
     }   
 }
 
 }
 
+@media screen and (max-width: 768px) {
+    
+    /* Estilo comun a todas las barras de navegación Mobile*/
+
+.navbar {
+
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        a:hover {
+          color: $body;
+        }
+
+}
+
+}

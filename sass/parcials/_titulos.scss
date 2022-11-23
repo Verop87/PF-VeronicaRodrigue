@@ -1,4 +1,6 @@
 
+@use "./variables";
+
 /* Estilo para titulos servicios / presupuesto /contacto / nosotros*/
 
 @media screen and (min-width: 768px) {
@@ -16,6 +18,7 @@
                     font-size: 2vw ;
                     color: antiquewhite;
                     margin-top: 2vw;
+                    font-family: variables.$font ;
                 }
                 div{
                     border-top: 1px solid antiquewhite;
@@ -23,4 +26,18 @@
                     padding-top: 2vw;
                 }
             }
+}
+
+
+    
+.presupuesto_main {
+    width: 100%;
+    .btn-group {
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: aliceblue;
+        }
+    }
 }
