@@ -271,4 +271,15 @@ a linkedin {
   color: aliceblue;
 }
 
+.servicios_btn_a {
+  width: 100%;
+}
+.servicios_btn_a .btn a {
+  text-decoration: none;
+  color: black;
+}
+.servicios_btn_a .btn a:hover {
+  color: aliceblue;
+}
+
 /*# sourceMappingURL=estilo.css.map */
